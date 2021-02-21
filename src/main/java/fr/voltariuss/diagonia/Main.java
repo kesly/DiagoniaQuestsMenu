@@ -20,6 +20,8 @@
  */
 package fr.voltariuss.diagonia;
 
+import java.util.logging.Logger;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -29,8 +31,15 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class Main extends JavaPlugin {
 
+  private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+
   @Override
   public void onEnable() {
-    System.out.println("Plugin started.");
+    LOGGER.info(this.getName() + " plugin is enabled.");
+  }
+
+  @Override
+  public void onDisable() {
+    LOGGER.info(this.getName() + " plugin is disabled.");
   }
 }
