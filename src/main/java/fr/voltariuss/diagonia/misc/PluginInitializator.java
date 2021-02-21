@@ -20,13 +20,9 @@
  */
 package fr.voltariuss.diagonia.misc;
 
-import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.event.Listener;
-import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import fr.minuskube.inv.InventoryListener;
 
 /**
  * This class contains methods for {@link JavaPlugin} initialization
