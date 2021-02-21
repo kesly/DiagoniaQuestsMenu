@@ -24,6 +24,8 @@ import java.util.logging.Logger;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import fr.voltariuss.diagonia.misc.PluginInitializator;
+
 /**
  * This class represents the entry point of the defined {@link JavaPlugin}.
  * 
@@ -35,6 +37,7 @@ public class Main extends JavaPlugin {
 
   @Override
   public void onEnable() {
+    PluginInitializator.initializePlugin(this);
     LOGGER.info(this.getName() + " plugin is enabled.");
   }
 
