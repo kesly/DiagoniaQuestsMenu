@@ -28,6 +28,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <version>1.0-SNAPSHOT</version>
 
   <name>DiagoniaQuestsMenu</name>
+  <description>Diagonia plugin that permits the displaying of quests menus</description>
   <url>https://diagonia.fr/</url>
 
   <properties>
@@ -62,6 +63,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <sourceDirectory>${project.basedir}/src/main/java/</sourceDirectory>
     <testSourceDirectory>${project.basedir}/src/test/java/</testSourceDirectory>
     <directory>${project.basedir}/target/</directory>
+    <resources>
+      <resource>
+        <directory>${project.basedir}/src/main/resources/</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
     <pluginManagement>
       <plugins>
         <plugin>
